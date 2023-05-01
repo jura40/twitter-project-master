@@ -4,6 +4,7 @@ import Home from "./Home";
 import Profile from "./Profile";
 import Trending from "./Trending";
 import Register from "./Register";
+import Widgets from "./Widgets";
 
 const App = () => {
   const [view, setView] = useState("HOME");
@@ -19,6 +20,7 @@ const App = () => {
       );
     default:
       return <Trending setView={setView}/>;
+      <Widgets/>
   }
 };
 
